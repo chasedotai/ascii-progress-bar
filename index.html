@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Progress Bar Generator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ASCII Progress Bar Generator</h1>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="styleSelect">Style:</label>
+                <select id="styleSelect">
+                    <option value="default">Default</option>
+                    <option value="simple">Simple</option>
+                    <option value="dots">Dots</option>
+                    <option value="arrows">Arrows</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="progressSlider">Progress:</label>
+                <input type="range" id="progressSlider" min="0" max="100" value="0">
+                <input type="number" id="progressInput" min="0" max="100" value="0">
+            </div>
+        </div>
+        
+        <div class="result">
+            <label>ASCII Progress Bar:</label>
+            <pre id="progressDisplay"></pre>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html> 
